@@ -8,7 +8,8 @@ public class Argument_Sum
         int sum = 0;
         int i = 0;
         while(i < args.length){
-            sum += Integer.parseInt(args[i]);
+            sum += Integer.parseInt(args[i]); //добавление к сумме, значение аргумента ком.строки. Никаких проверок,
+                                              //самый простой вариант
             i++;
         }
         System.out.println(sum);
