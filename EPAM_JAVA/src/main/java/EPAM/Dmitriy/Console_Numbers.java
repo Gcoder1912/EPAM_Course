@@ -28,7 +28,7 @@ public class Console_Numbers {
                     isSorted = false;
 
                     buf = numbers[i];
-                    numbers[i] = numbers[i+1];
+                    numbers[i] = numbers[i+1]; //Свап значений при необходиости
                     numbers[i+1] = buf;
                 }
             }
