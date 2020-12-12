@@ -1,8 +1,9 @@
-package EPAM.Dmitriy; //первая строчка программы
+package EPAM.Dmitriy.First_Java_Module; //первая строчка программы
 //вторая строчка программы(она пустая)
 import java.util.Random;//третья строка
 import java.util.Scanner;//четвертая строка перед пятой идущая, за третьей следующая
-
+//Та самая строка пятая перед шестой идущая, после четвертой, в которой говорилось о пятой, следующая
+//ладно-ладно, только на ревью не бейте
 public class Two_Dimensional_Arrays {
     public static void main(String[] args){
 

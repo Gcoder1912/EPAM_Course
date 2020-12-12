@@ -1,4 +1,4 @@
-package EPAM.Dmitriy;
+package EPAM.Dmitriy.First_Java_Module;
 
 public class Console_Arguments
 {
