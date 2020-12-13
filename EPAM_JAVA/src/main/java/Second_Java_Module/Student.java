@@ -142,7 +142,7 @@ public class Student { //определение полей
 
         students_list[2] = new Student("Dmitriy", "Evseev", "Alekseevich",
                 "Gorkogo", 2002, 1, "+9965517****7",
-                "Information security", 1, "OBIS");
+                "Information security", 1, "OBIS--2");
 
         students_list[3] = new Student("Artem", "Skvortsov", "Alekseevich",
                 "Gorkogo", 2002, 5, "+9965517****5",
@@ -150,7 +150,7 @@ public class Student { //определение полей
 
         students_list[4] = new Student("Kristina", "Panasenko", "Artemovna",
                 "Gorkogo", 2002, 4, "+9965517****5",
-                "Computer Science", 1, "OBIS");
+                "Computer Science", 1, "OBIS--2");
 
 
         /*Конечно, в данный момент легче просто посчитатьразличные группы,но если мы расширим базу студентов,
@@ -208,7 +208,7 @@ public class Student { //определение полей
                 for (int i = 0; i < 5; i++) {
                     if (Student.students_list[i].getCourse().equals(2)) {
                         if (students_counter > 0) {
-                            System.out.println("Second course students are: " + '\n' +
+                            System.out.println("\nSecond course students are: " + '\n' +
                                     Student.students_list[i].getFirst_name() + ' ' + Student.students_list[i].getSecond_name());
                         }
                         students_counter--;
@@ -220,7 +220,7 @@ public class Student { //определение полей
                 for (int i = 0; i < 5; i++) {
                     if (Student.students_list[i].getCourse().equals(3)) {
                         if (students_counter > 0) {
-                            System.out.println("Third course students: " + '\n' +
+                            System.out.println("\nThird course students: " + '\n' +
                                     Student.students_list[i].getFirst_name() + ' ' + Student.students_list[i].getSecond_name());
                         }
                         students_counter--;
@@ -231,13 +231,35 @@ public class Student { //определение полей
                 for (int i = 0; i < 5; i++) {
                     if (Student.students_list[i].getCourse().equals(4)) {
                         if (students_counter > 0) {
-                            System.out.println("Fourth course students: " + '\n' +
+                            System.out.println("\nFourth course students: " + '\n' +
                                     Student.students_list[i].getFirst_name() + ' ' + Student.students_list[i].getSecond_name());
                         }
                         students_counter--;
 
                     }
                 }
+                System.out.println("Information security faculty students: " + '\n');
+                for (Student value : students_list) {
+                    if (value.getFaculty().equals("Information security")) {
+                        System.out.println(value);
+                    }
+
+                }
+                System.out.println("Computer Science faculty students: " + '\n');
+                for (Student student : students_list) {
+                    if (student.getFaculty().equals("Computer Science")) {
+                        System.out.println(student);
+                    }
+
+                }
+                System.out.println("Python-Backend faculty students: " + '\n');
+                for (Student student : students_list) {
+                    if (student.getFaculty().equals("Python-Developer")) {
+                        System.out.println(student);
+                    }
+
+                }
+
                 break;
 
             case "Older than input year"://Вывод студентов родившихся после введенного года
